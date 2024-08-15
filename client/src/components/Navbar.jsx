@@ -2,8 +2,11 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.svg";
 import { FaBars, FaTimes } from "react-icons/fa";
+import { Badge } from "antd";
+import { useCart } from "../context/CartContext";
 
 const Navbar = () => {
+  const [cart] = useCart();
   const [isOpen, setIsOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -17,12 +20,10 @@ const Navbar = () => {
           <img src={logo} className="h-8" alt="Logo" />
         </Link>
       </div>
-      <div className="flex items-center space-x-8 ">
+      <div className="flex items-center space-x-8 rtl:space-x-reverse">
         <button
           onClick={toggleMenu}
-          className="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-800 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
-          aria-controls="navbar-menu"
-          aria-expanded={isOpen}
+          className="inline-flex items-center p-2 w-10 h-10 justify-center text-gray-800 rounded-lg md:hidden hover:bg-gray-200 focus:outline-none focus:ring-2 "
         >
           <span className="sr-only">Open main menu</span>
           {isOpen ? (
@@ -75,6 +76,7 @@ const Navbar = () => {
               className="block py-2 px-3 text-gray-800 font-semibold rounded hover:bg-gray-100"
             >
               Cart
+              <Badge count={cart?.length} showZero className="bottom-2"></Badge>
             </Link>
           </div>
         </div>

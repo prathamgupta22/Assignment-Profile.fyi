@@ -37,6 +37,11 @@ const CartItem = ({ product }) => {
               {product.title}
             </h3>
           </div>
+          <div>
+            <p className="mt-5 text-md font-bold text-gray-700">
+              Price : {product.price}
+            </p>
+          </div>
           <div className="mt-auto flex items-center gap-4">
             <button
               type="button"

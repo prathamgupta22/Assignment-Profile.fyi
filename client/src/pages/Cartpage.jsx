@@ -31,8 +31,8 @@ const Cartpage = () => {
   const totalPriceNum = parseFloat(totalPrice);
 
   return (
-    <div className="font-sans max-w-4xl max-md:max-w-xl mx-auto p-4">
-      <div className="text-center text-3xl w-[25%] mx-auto border-b-2 border-gray-200 mt-2 pb-4 pt-12">
+    <div className="font-sans max-w-4xl max-md:max-w-xl mx-auto p-4  ">
+      <div className="text-center text-3xl w-[25%] mx-auto border-b-2 border-gray-200 pb-4 pt-20">
         <p className="text-gray-600 font-semibold ">Your Cart</p>
       </div>
       <div className="grid md:grid-cols-3 gap-4 mt-8">
