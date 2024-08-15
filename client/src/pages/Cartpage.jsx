@@ -57,16 +57,23 @@ const Cartpage = () => {
             </div>
             <div className="flex flex-wrap gap-4 text-sm">
               <p>Shipping</p>
-              <p className="ml-auto font-bold">₹2.00</p>
+              <p className="ml-auto font-bold">₹40.00</p>
             </div>
             <div className="flex flex-wrap gap-4 text-sm">
               <p>Tax</p>
               <p className="ml-auto font-bold">₹4.00</p>
             </div>
+            <div className="flex flex-wrap gap-4 text-sm">
+              <p>Discount </p>
+              <p className="ml-auto font-bold">20% off</p>
+            </div>
             <hr className="border-gray-300" />
             <div className="flex gap-4 text-base font-bold">
               <p>Total</p>
-              <p className="ml-auto"> ₹{(totalPriceNum + 6).toFixed(2)}</p>
+              <p className="ml-auto">
+                {" "}
+                ₹{(totalPriceNum + 44 - (totalPriceNum + 44) * 0.2).toFixed(2)}
+              </p>
             </div>
           </div>
           <button
