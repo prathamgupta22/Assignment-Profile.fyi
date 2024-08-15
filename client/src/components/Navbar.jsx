@@ -35,7 +35,7 @@ const Navbar = () => {
         <div
           className={`${
             isOpen ? "block" : "hidden"
-          } absolute top-full left-0 w-full bg-white shadow-lg md:hidden`}
+          } absolute top-full left-[-35px] w-full bg-white shadow-lg md:hidden`}
           id="navbar-menu"
         >
           <div className="flex flex-col font-semibold text-gray-800 p-4 mt-4 border border-gray-200 rounded-lg">

@@ -12,7 +12,7 @@ const Home = () => {
         alt="Banner"
         className="object-cover w-full h-full absolute inset-0"
       />
-      <div className="absolute top-40 left-12 lg:top-48 lg:left-32 w-full h-full z-10">
+      <div className="absolute left-6 top-32 md:left-12  lg:top-48 lg:left-32 w-full h-full z-10">
         <h1 className="text-white text-4xl font-bold">Welcome to Our Site!</h1>
         <div className="mt-6 mx-20">
           <Link
