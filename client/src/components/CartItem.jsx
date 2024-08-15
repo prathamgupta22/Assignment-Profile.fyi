@@ -22,8 +22,8 @@ const CartItem = ({ product }) => {
   };
 
   return (
-    <div className="flex gap-4 bg-white px-4 py-6 rounded-md shadow-md shadow-gray-300">
-      <div className="flex gap-4">
+    <div className="flex md:gap-4 bg-white p-4 md:px-4 md:py-8 rounded-md shadow-md shadow-gray-300 ">
+      <div className="flex md:gap-4">
         <div className="w-28 h-28 ">
           <img
             src={product.images[0]}
@@ -31,18 +31,18 @@ const CartItem = ({ product }) => {
             alt={product.title}
           />
         </div>
-        <div className="flex flex-col ">
+        <div className="flex flex-col gap-4">
           <div>
             <h3 className="text-base font-bold text-gray-700">
               {product.title}
             </h3>
           </div>
           <div>
-            <p className="mt-5 text-md font-bold text-gray-700">
+            <p className=" text-md font-bold text-gray-700">
               Price : {product.price}
             </p>
           </div>
-          <div className="mt-auto flex items-center gap-4">
+          <div className=" flex items-center gap-4">
             <button
               type="button"
               className="flex items-center justify-center w-5 h-5 bg-gray-400 outline-none rounded-full"

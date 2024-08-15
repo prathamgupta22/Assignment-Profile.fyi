@@ -76,7 +76,12 @@ const Navbar = () => {
               className="block py-2 px-3 text-gray-800 font-semibold rounded hover:bg-gray-100"
             >
               Cart
-              <Badge count={cart?.length} showZero className="bottom-2"></Badge>
+              <Badge
+                count={cart?.length}
+                showZero
+                className="bottom-2"
+                color="#f0c040"
+              ></Badge>
             </Link>
           </div>
         </div>
